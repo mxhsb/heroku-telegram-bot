@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-import redis
+# import redis
 import os
-import telebot
+import telegram
 # import some_api_lib
 # import ...
 
@@ -23,9 +23,11 @@ some_api_token = os.environ['SOME_API_TOKEN']
 # r = redis.from_url(os.environ.get("REDIS_URL"))
 
 #       Your bot code below
-bot = telebot.TeleBot(token)
+bot = telegram.Bot(token)
 # some_api = some_api_lib.connect(some_api_token)
 #              ...
+
+print(bot, '===')
 
 import requests
 from bs4 import BeautifulSoup as soup
